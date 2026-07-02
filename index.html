@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agent Console — Steer AI coding agents from iPhone and iPad</title>
+  <meta name="description" content="A SwiftUI client for AI coding agents, natively built for iPhone and iPad. Chat, terminals, and code review, on hosts you run yourself.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="canonical" href="https://qusic.github.io/agent-console/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Agent Console">
+  <meta property="og:title" content="Agent Console — Steer AI coding agents from iPhone and iPad">
+  <meta property="og:description" content="A SwiftUI client for AI coding agents, natively built for iPhone and iPad. Chat, terminals, and code review, on hosts you run yourself.">
+  <meta property="og:url" content="https://qusic.github.io/agent-console/">
+  <meta property="og:image" content="https://qusic.github.io/agent-console/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Agent Console — Steer AI coding agents from iPhone and iPad">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    const t = e => document.documentElement.dataset.theme = e.matches ? "dim" : "winter";
+    const m = matchMedia("(prefers-color-scheme: dark)");
+    t(m); m.addEventListener("change", t);
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header class="navbar bg-base-100 border-b border-base-200">
+    <div class="flex-1">
+      <span class="btn btn-ghost text-xl font-bold">Agent Console</span>
+    </div>
+    <a href="https://apps.apple.com/app/id6786123190" class="btn btn-primary">Download</a>
+  </header>
+
+  <main>
+    <section class="hero bg-base-200 py-24">
+      <div class="hero-content text-center">
+        <div class="max-w-2xl">
+          <h1 class="text-5xl font-bold">Steer AI coding agents from iPhone and iPad</h1>
+          <p class="py-6 text-lg opacity-80">Chat with them, open terminals, and review diffs — all on hosts you run yourself. Your machines, your code, your control.</p>
+          <a href="https://apps.apple.com/app/id6786123190" class="btn btn-primary btn-lg">Download on the App Store</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="max-w-3xl mx-auto px-4 pt-16 text-center">
+      <p class="text-lg opacity-80">A SwiftUI client for AI coding agents, natively built for iPhone and iPad. Point it at an agent host on your Mac, a PC, or a cloud VM, and steer coding agents from anywhere.</p>
+    </div>
+
+    <section class="max-w-5xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Chat</h3>
+            <p>Hand an agent a task and watch it think, edit files, and run commands in real time.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Terminals</h3>
+            <p>Open a live shell on the host and type straight into it.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Code review</h3>
+            <p>See exactly what an agent changed, with syntax-highlighted diffs.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Files and editing</h3>
+            <p>Browse the workspace and make quick manual edits yourself.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Multiple hosts</h3>
+            <p>Keep several on hand and switch between them in a tap.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Flexible connection</h3>
+            <p>Connect directly over WebSocket, or reach a private host through a secure cloud tunnel.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Private by design</h3>
+            <p>No backend of ours in the middle; your data stays entirely under your control.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Native app</h3>
+            <p>Pure SwiftUI, fast and fluid, with the look and feel of iOS.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-4xl mx-auto px-4 py-16">
+      <h2 class="text-3xl font-bold text-center mb-4">Bring your own host</h2>
+      <p class="text-center opacity-80 mb-10">Agent Console speaks the <a class="link link-primary" href="https://microsoft.github.io/agent-host-protocol/">Agent Host Protocol</a>, so it works with any host that implements it.</p>
+      <div class="grid gap-6 sm:grid-cols-2">
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Agent hosts</h3>
+            <p><strong>Visual Studio Code</strong> — its built-in agent host runs the Copilot and Claude coding agents.</p>
+          </div>
+        </div>
+        <div class="card bg-base-100 border border-base-200">
+          <div class="card-body">
+            <h3 class="card-title">Cloud tunnels</h3>
+            <p><strong>Microsoft Dev Tunnels</strong> — built into VS Code, with a GitHub sign-in.</p>
+          </div>
+        </div>
+      </div>
+      <p class="text-center opacity-70 mt-8 text-sm">Hitting a snag with a host, or want another tunnel service? <a class="link" href="https://github.com/Qusic/agent-console/discussions">Let us know</a> — we're keen to add more.</p>
+    </section>
+
+    <div class="bg-base-200 py-16">
+      <div class="max-w-2xl mx-auto px-4 text-center">
+        <p class="text-lg opacity-80">Agent Console is just the client — a window into agents running on machines you control, not a managed cloud service. You bring your own host, tools, and models.</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer footer-center bg-base-100 text-base-content p-10 border-t border-base-200">
+    <aside>
+      <p class="text-lg font-bold">Agent Console</p>
+    </aside>
+    <nav class="grid grid-flow-col gap-6">
+      <a class="link link-hover" href="https://github.com/Qusic/agent-console/discussions">Feedback</a>
+      <a class="link link-hover" href="privacy.html">Privacy</a>
+    </nav>
+  </footer>
+</body>
+</html>

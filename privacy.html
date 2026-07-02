@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy — Agent Console</title>
+  <meta name="description" content="Agent Console does not collect, store, or transmit any personal data. Your messages, code, and credentials stay between your device and the hosts you run.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="canonical" href="https://qusic.github.io/agent-console/privacy.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Agent Console">
+  <meta property="og:title" content="Privacy — Agent Console">
+  <meta property="og:description" content="Agent Console does not collect, store, or transmit any personal data. Your messages, code, and credentials stay between your device and the hosts you run.">
+  <meta property="og:url" content="https://qusic.github.io/agent-console/privacy.html">
+  <meta property="og:image" content="https://qusic.github.io/agent-console/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Agent Console — Steer AI coding agents from iPhone and iPad">
+  <meta name="twitter:card" content="summary_large_image">
+  <script>
+    const t = e => document.documentElement.dataset.theme = e.matches ? "dim" : "winter";
+    const m = matchMedia("(prefers-color-scheme: dark)");
+    t(m); m.addEventListener("change", t);
+  </script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+  <header class="navbar bg-base-100 border-b border-base-200">
+    <div class="flex-1">
+      <a href="index.html" class="btn btn-ghost text-xl font-bold">Agent Console</a>
+    </div>
+    <a href="https://apps.apple.com/app/id6786123190" class="btn btn-primary">Download</a>
+  </header>
+
+  <main class="max-w-3xl mx-auto px-4 py-16">
+    <h1 class="text-4xl font-bold mb-8">Privacy</h1>
+    <p class="py-2">Agent Console does not collect, store, or transmit any personal data. There is no backend of ours in the middle.</p>
+    <p class="py-2">The app talks only to the agent hosts you configure, over connections you set up — direct WebSocket or a cloud tunnel you control. Your messages, code, credentials, and files stay between your device and your hosts.</p>
+    <ul class="list-disc pl-6 py-4 space-y-2">
+      <li>No analytics, no tracking.</li>
+      <li>No account with us. Tokens for your hosts and agents are kept in the iOS Keychain on your device.</li>
+      <li>Host list and preferences are stored on your device.</li>
+    </ul>
+  </main>
+
+  <footer class="footer footer-center bg-base-100 text-base-content p-10 border-t border-base-200">
+    <aside>
+      <p class="text-lg font-bold">Agent Console</p>
+    </aside>
+    <nav class="grid grid-flow-col gap-6">
+      <a class="link link-hover" href="https://github.com/Qusic/agent-console/discussions">Feedback</a>
+      <a class="link link-hover" href="index.html">Home</a>
+    </nav>
+  </footer>
+</body>
+</html>
