@@ -35,13 +35,17 @@
   </header>
 
   <main>
-    <section class="hero bg-base-200 py-24">
-      <div class="hero-content text-center">
-        <div class="max-w-2xl">
-          <h1 class="text-5xl font-bold">Steer AI coding agents from iPhone and iPad</h1>
+    <section class="hero bg-base-200 py-20">
+      <div class="hero-content flex-col lg:flex-row gap-12 lg:gap-16 max-w-6xl">
+        <div class="max-w-xl text-center lg:text-left">
+          <h1 class="text-4xl sm:text-5xl font-bold">Steer AI coding agents from iPhone and iPad</h1>
           <p class="py-6 text-lg opacity-80">Chat with them, open terminals, and review diffs — all on hosts you run yourself. Your machines, your code, your control.</p>
           <a href="https://apps.apple.com/app/id6786123190" class="btn btn-primary btn-lg">Download on the App Store</a>
         </div>
+        <img src="shots/chat-phone.webp" width="660" height="1434"
+             alt="Agent Console on iPhone: an agent searching and editing files, pausing to ask permission to run a command"
+             class="w-56 sm:w-64 lg:w-72 shrink-0 rounded-4xl border-8 border-neutral shadow-2xl"
+             fetchpriority="high">
       </div>
     </section>
 
@@ -50,54 +54,88 @@
     </div>
 
     <section class="max-w-5xl mx-auto px-4 py-16">
-      <h2 class="text-3xl font-bold text-center mb-12">Features</h2>
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Chat</h3>
-            <p>Hand an agent a task and watch it think, edit files, and run commands in real time.</p>
+      <h2 class="text-3xl font-bold text-center mb-14">Features</h2>
+
+      <div class="space-y-24">
+        <div>
+          <div class="max-w-2xl mx-auto text-center">
+            <h3 class="text-2xl font-bold mb-3">Chat</h3>
+            <p class="text-lg opacity-80">Hand an agent a task and watch it think, edit files, and run commands in real time.</p>
           </div>
+          <img src="shots/chat-ipad.webp" width="1400" height="1868"
+               alt="Agent Console on iPad: sessions and terminals in the sidebar, next to an agent editing files and asking to run a command"
+               class="mt-10 mx-auto w-full max-w-3xl rounded-2xl border-8 border-neutral shadow-2xl"
+               loading="lazy">
         </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Terminals</h3>
-            <p>Open a live shell on the host and type straight into it.</p>
+
+        <div class="grid gap-10 lg:grid-cols-2 items-center">
+          <div class="text-center lg:text-left">
+            <h3 class="text-2xl font-bold mb-3">Questions</h3>
+            <p class="text-lg opacity-80">When an agent needs a decision, answer with native controls instead of typing.</p>
           </div>
+          <img src="shots/ask-phone.webp" width="660" height="1434"
+               alt="An agent asking a structured question, answered with radio buttons and checkboxes"
+               class="w-56 sm:w-64 mx-auto rounded-4xl border-8 border-neutral shadow-xl"
+               loading="lazy">
         </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Code review</h3>
-            <p>See exactly what an agent changed, with syntax-highlighted diffs.</p>
+
+        <div class="grid gap-10 lg:grid-cols-2 items-center">
+          <div class="text-center lg:text-left lg:order-last">
+            <h3 class="text-2xl font-bold mb-3">Terminals</h3>
+            <p class="text-lg opacity-80">Open a live shell on the host and type straight into it.</p>
           </div>
+          <img src="shots/terminal-phone.webp" width="660" height="1434"
+               alt="A live shell on the host running a Swift test suite, then committing the result"
+               class="w-56 sm:w-64 mx-auto rounded-4xl border-8 border-neutral shadow-xl"
+               loading="lazy">
         </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Files and editing</h3>
-            <p>Browse the workspace and make quick manual edits yourself.</p>
+
+        <div class="grid gap-10 lg:grid-cols-2 items-center">
+          <div class="text-center lg:text-left">
+            <h3 class="text-2xl font-bold mb-3">Code review</h3>
+            <p class="text-lg opacity-80">See exactly what an agent changed, with syntax-highlighted diffs.</p>
           </div>
+          <img src="shots/diff-phone.webp" width="660" height="1434"
+               alt="A syntax-highlighted diff of Checkout.swift showing added and removed lines"
+               class="w-56 sm:w-64 mx-auto rounded-4xl border-8 border-neutral shadow-xl"
+               loading="lazy">
         </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Multiple hosts</h3>
-            <p>Keep several on hand and switch between them in a tap.</p>
+
+        <div class="grid gap-10 lg:grid-cols-2 items-center">
+          <div class="text-center lg:text-left lg:order-last">
+            <h3 class="text-2xl font-bold mb-3">Files and editing</h3>
+            <p class="text-lg opacity-80">Browse the workspace and make quick manual edits yourself.</p>
           </div>
+          <img src="shots/editor-phone.webp" width="660" height="1434"
+               alt="Cart.swift open in the built-in editor with syntax highlighting"
+               class="w-56 sm:w-64 mx-auto rounded-4xl border-8 border-neutral shadow-xl"
+               loading="lazy">
         </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Flexible connection</h3>
-            <p>Connect directly over WebSocket, or reach a private host through a secure cloud tunnel.</p>
+
+        <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="card bg-base-100 border border-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Multiple hosts</h3>
+              <p>Keep several on hand and switch between them in a tap.</p>
+            </div>
           </div>
-        </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Private by design</h3>
-            <p>No backend of ours in the middle; your data stays entirely under your control.</p>
+          <div class="card bg-base-100 border border-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Flexible connection</h3>
+              <p>Connect directly over WebSocket, or reach a private host through a secure cloud tunnel.</p>
+            </div>
           </div>
-        </div>
-        <div class="card bg-base-100 border border-base-200">
-          <div class="card-body">
-            <h3 class="card-title">Native app</h3>
-            <p>Pure SwiftUI, fast and fluid, with the look and feel of iOS.</p>
+          <div class="card bg-base-100 border border-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Private by design</h3>
+              <p>No backend of ours in the middle; your data stays entirely under your control.</p>
+            </div>
+          </div>
+          <div class="card bg-base-100 border border-base-200">
+            <div class="card-body">
+              <h3 class="card-title">Native app</h3>
+              <p>Pure SwiftUI, fast and fluid, with the look and feel of iOS.</p>
+            </div>
           </div>
         </div>
       </div>
