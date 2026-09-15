@@ -48,9 +48,9 @@ connects.
 Agent Console currently supports **Microsoft Dev Tunnels**. This is a transport choice,
 not a requirement of AHP. Other providers are not yet integrated.
 
-For the currently verified workflow, see
-[Connect Visual Studio Code through a tunnel](../visual-studio-code/#cloud-tunnel).
-Microsoft also publishes [Dev Tunnels documentation](https://learn.microsoft.com/azure/developer/dev-tunnels/).
+For host-specific startup and tunnel commands, see
+[Host setup](../overview/#host-setup). Microsoft also publishes
+[Dev Tunnels documentation](https://learn.microsoft.com/azure/developer/dev-tunnels/).
 
 ## Sign-ins are separate
 

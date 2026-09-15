@@ -32,5 +32,13 @@ From Agent Console, you can:
 - open terminals exposed by the host;
 - move between hosts and synchronized sessions.
 
-The exact agents, models, and tools available depend on the host implementation. Setup
-instructions are currently available for [VS Code](../visual-studio-code/).
+The exact agents, models, and tools available depend on the host implementation.
+
+## Host setup
+
+The following hosts are tested with Agent Console:
+
+- [Pi Coding Agent](../pi-coding-agent/) through `pi-ahp`
+- [Visual Studio Code](../visual-studio-code/) with its built-in agent host
+
+Other compatible AHP hosts may also work.

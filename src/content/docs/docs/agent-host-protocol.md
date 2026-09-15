@@ -65,9 +65,8 @@ agents or tools. A host advertises its session configuration and capabilities; t
 presents what is available.
 
 Any host implementing a protocol version supported by Agent Console should be compatible
-in principle. At present, **Visual Studio Code is the only implementation verified with
-Agent Console**. This reflects the current AHP ecosystem, not a VS Code-specific dependency
-in the app. See [VS Code](../visual-studio-code/) for setup instructions.
+in principle. See [Host setup](../overview/#host-setup) for the implementations tested
+in practice.
 
 If you are building another AHP host, we would like to hear about it in
 [Discussions](https://github.com/Qusic/agent-console/discussions).

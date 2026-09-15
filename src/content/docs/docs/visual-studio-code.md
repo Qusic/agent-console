@@ -1,14 +1,14 @@
 ---
 title: Visual Studio Code
-description: Start the currently verified VS Code agent host and connect Agent Console directly or through Microsoft Dev Tunnels.
+description: Start the VS Code agent host and connect Agent Console directly or through Microsoft Dev Tunnels.
 sidebar:
   label: VS Code
-  order: 4
+  order: 5
 ---
 
-Visual Studio Code provides the agent host used for current Agent Console compatibility
-testing. These instructions are specific to VS Code; Agent Console itself connects to
-hosts through the [Agent Host Protocol](../agent-host-protocol/).
+Visual Studio Code includes a built-in agent host verified with Agent Console. These
+instructions are specific to VS Code; Agent Console itself connects to hosts through the
+[Agent Host Protocol](../agent-host-protocol/).
 
 VS Code's built-in host exposes its Copilot and Claude coding agents to AHP clients.
 
