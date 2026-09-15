@@ -34,11 +34,12 @@ From Agent Console, you can:
 
 The exact agents, models, and tools available depend on the host implementation.
 
-## Host setup
+## Setup guides
 
-The following hosts are tested with Agent Console:
+The following setups are tested with Agent Console:
 
-- [Pi Coding Agent](../pi-coding-agent/) through `pi-ahp`
-- [Visual Studio Code](../visual-studio-code/) with its built-in agent host
+- [Pi Coding Agent](../pi-coding-agent/) through the open-source `pi-ahp` host
+- [VS Code Agent Host](../visual-studio-code/), included with Visual Studio Code and
+  supporting multiple agent harnesses, including GitHub Copilot and Claude
 
 Other compatible AHP hosts may also work.

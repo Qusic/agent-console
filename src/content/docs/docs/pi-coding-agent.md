@@ -47,7 +47,7 @@ For a machine behind NAT or on changing networks, `pi-ahp-tunnel` creates or
 reuses a Microsoft Dev Tunnel:
 
 ```sh
-devtunnel user login
+devtunnel user login -g
 pi-ahp-tunnel
 ```
 

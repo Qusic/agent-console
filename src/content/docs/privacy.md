@@ -8,8 +8,9 @@ Console account, or backend service.
 
 The app stores the information it needs on your device:
 
-- saved hosts and preferences are stored locally;
-- authentication tokens are stored in the iOS Keychain.
+- saved hosts and preferences are stored locally; a direct host URL can include its
+  connection token;
+- tokens obtained through tunnel or agent sign-ins are stored in the iOS Keychain.
 
 When you use Agent Console, messages, code, files, and credentials are exchanged only as
 needed with the agent hosts and connection or authentication providers you choose. The

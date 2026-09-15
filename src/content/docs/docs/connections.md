@@ -24,19 +24,19 @@ Use a direct connection when your device already has a route to the host: on the
 Wi-Fi network, through a VPN, or to a cloud VM with an open port.
 
 In Agent Console, open **Add Host**, use **Direct Connection**, and enter the WebSocket URL
-printed by the host:
+provided by the host:
 
 ```text
-ws://192.168.1.42:31546?tkn=secret
+ws://192.168.1.42:31546
 ```
 
-Use `wss://` when the host terminates TLS.
+If the URL includes query parameters, such as a connection token, paste the complete URL
+exactly as provided. Use `wss://` when the host terminates TLS.
 
 :::caution
-A direct URL can contain an access token; URLs printed by the current VS Code host include
-one. Treat the complete URL like a password: anyone who has it receives whatever access
-the host grants. Prefer a VPN, a trusted local network, `wss://`, or a tunnel over exposing
-an unencrypted WebSocket to the internet.
+A direct URL can contain a connection token. Treat the complete URL like a password: anyone
+who has it receives whatever access the host grants. Prefer a VPN, a trusted local network,
+`wss://`, or a tunnel over exposing an unencrypted WebSocket to the internet.
 :::
 
 ## Cloud tunnel
@@ -49,23 +49,24 @@ Agent Console currently supports **Microsoft Dev Tunnels**. This is a transport 
 not a requirement of AHP. Other providers are not yet integrated.
 
 For host-specific startup and tunnel commands, see
-[Host setup](../overview/#host-setup). Microsoft also publishes
+[Setup guides](../overview/#setup-guides). Microsoft also publishes
 [Dev Tunnels documentation](https://learn.microsoft.com/azure/developer/dev-tunnels/).
 
 ## Sign-ins are separate
 
-A tunnel and an agent can each require authentication, but they authorize different
-services:
+Tunnel and agent or model access can require separate sign-ins:
 
 - **Tunnel sign-in** lets the app list and reach tunnels owned by your provider account.
-- **Agent sign-in** supplies credentials requested by an agent through the host.
+- **Agent sign-in** provides credentials requested through the host for agent or model
+  access.
 
-With the current VS Code and Dev Tunnels setup, both flows can display a GitHub device
-code. They still use separate OAuth applications, tokens, and account bindings. Signing
-out of one does not sign you out of the other.
+Whether an agent sign-in is needed depends on the host. Some hosts request model-provider
+authorization through AHP, while others use credentials already configured on the host.
+Even when tunnel and agent sign-ins use the same identity, they authorize different
+services. Signing in to or out of one does not affect the other.
 
-Tokens are stored in the iOS Keychain and sent only to the host or provider they belong
-to.
+Tokens obtained through these sign-in flows are stored in the iOS Keychain and sent only
+to the host or provider they belong to.
 
 ## Multiple hosts
 

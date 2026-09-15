@@ -65,7 +65,7 @@ agents or tools. A host advertises its session configuration and capabilities; t
 presents what is available.
 
 Any host implementing a protocol version supported by Agent Console should be compatible
-in principle. See [Host setup](../overview/#host-setup) for the implementations tested
+in principle. See [Setup guides](../overview/#setup-guides) for the implementations tested
 in practice.
 
 If you are building another AHP host, we would like to hear about it in
@@ -82,9 +82,8 @@ the fix.
 
 ## Project and SDKs
 
-The AHP project publishes a specification, source code, and SDKs for Swift, Rust,
-TypeScript, Kotlin, and Go. Other clients include the command-line client
-[AHPX](https://github.com/TylerLeonhardt/ahpx) and the client built into Visual Studio Code.
+The AHP project publishes a specification, source code, and client libraries for several
+languages.
 
 - [Specification and guide](https://microsoft.github.io/agent-host-protocol/)
 - [Source on GitHub](https://github.com/microsoft/agent-host-protocol)
