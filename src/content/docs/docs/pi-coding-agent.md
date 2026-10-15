@@ -67,5 +67,8 @@ resolve model-provider credentials from its own configuration on the host.
 
 ## Supported features
 
-Available features depend on the installed `pi-ahp` version. See its current
-[AHP support matrix](https://github.com/Qusic/pi-ahp#ahp-support).
+See [`pi-ahp`'s AHP support matrix](https://github.com/Qusic/pi-ahp#ahp-support) for its
+supported features.
+
+`pi-ahp` supports the [webhook extension](https://github.com/Qusic/pi-ahp#webhooks) that
+Agent Console uses for [notifications](../webhooks-and-notifications/).

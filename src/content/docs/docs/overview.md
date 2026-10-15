@@ -19,8 +19,7 @@ process that runs there and communicates with clients such as Agent Console.
 3. The app and host communicate over the [Agent Host Protocol](../agent-host-protocol/).
 4. Session state stays synchronized across connected clients.
 
-Your project does not need to be copied to the iPhone or iPad, and Agent Console does not
-operate a backend between the app and your host.
+Your project does not need to be copied to your iPhone or iPad.
 
 ## What you can do
 
@@ -30,7 +29,8 @@ From Agent Console, you can:
 - answer questions and approve actions;
 - review diffs, browse files, and make edits;
 - open terminals exposed by the host;
-- move between hosts and synchronized sessions.
+- move between hosts and synchronized sessions;
+- receive [notifications](../webhooks-and-notifications/) from supported hosts, if you opt in.
 
 The exact agents, models, and tools available depend on the host implementation.
 

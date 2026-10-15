@@ -62,7 +62,8 @@ without transferring the project to the mobile device.
 
 AHP defines the communication model, but it does not require every host to expose the same
 agents or tools. A host advertises its session configuration and capabilities; the client
-presents what is available.
+presents what is available. Optional extensions such as
+[webhooks](../webhooks-and-notifications/) are not required for a compatible host.
 
 Any host implementing a protocol version supported by Agent Console should be compatible
 in principle. See [Setup guides](../overview/#setup-guides) for the implementations tested

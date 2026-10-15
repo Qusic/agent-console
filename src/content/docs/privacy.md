@@ -1,18 +1,36 @@
 ---
 title: Privacy
-description: Agent Console has no analytics, tracking, account system, or backend. Data is stored on your device and exchanged only with hosts and providers you choose.
+description: How Agent Console handles your data and optional notifications.
 ---
 
-Agent Console does not collect personal data for us. It has no analytics, tracking, Agent
-Console account, or backend service.
+No Agent Console account is required, and the app does not use analytics or tracking. We
+do not host your agents or proxy the app's connection to your host. That connection may use a
+cloud tunnel you choose, and the host may contact its configured model providers. This
+statement covers Agent Console and its optional push relay; hosts and other providers
+have their own data-handling practices.
 
-The app stores the information it needs on your device:
+## Data on your device
 
-- saved hosts and preferences are stored locally; a direct host URL can include its
-  connection token;
-- tokens obtained through tunnel or agent sign-ins are stored in the iOS Keychain.
+The app keeps saved hosts and preferences on your device. A saved direct connection
+address may include a connection token. Tokens used to sign in to tunnel or agent
+providers are stored in the iOS Keychain.
 
-When you use Agent Console, messages, code, files, and credentials are exchanged only as
-needed with the agent hosts and connection or authentication providers you choose. The
-connection can be a direct WebSocket or a cloud tunnel, but no traffic is routed through
-an Agent Console service.
+## Optional notifications
+
+Notifications require a compatible host, your consent for that host, and iOS permission.
+If you opt in and iOS allows notifications, the app shares this device's push token and
+our relay address with the host. The host decides which events to report and what content
+to include. Previews may contain session content and appear on the lock screen.
+
+If the host sends a notification to our relay at `qusic.me`, the relay uses the request
+to deliver it through Apple Push Notification service (APNs). It does not retain the
+request or device token.
+
+## Your choices
+
+When a host is connected, you can turn off its notifications. The app asks it to remove
+the webhook, but an existing registration may remain if the host cannot be reached. The
+app cannot erase data the host has already retained or sent. Disabling iOS notifications
+stops alerts on your device, not necessarily activity by the host.
+
+See [Notifications](../docs/webhooks-and-notifications/) for setup and availability.
