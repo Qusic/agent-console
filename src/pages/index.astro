@@ -15,6 +15,7 @@ const pageTitle = `${headline} — Agent Console`;
 const description =
 	'Connect to AI coding agents running on your Mac, PC, or cloud VM from a native iPhone and iPad app.';
 const appStore = 'https://apps.apple.com/app/id6786123190';
+const testFlight = 'https://testflight.apple.com/join/1ECkukpF';
 
 const primaryFeatures = [
 	{
@@ -89,6 +90,9 @@ const footerLinks = [
 							alt="Download on the App Store"
 						/>
 					</a>
+					<p class="beta-option">
+						<a href={testFlight}>Try the beta on TestFlight →</a>
+					</p>
 				</div>
 
 				<div class="showcase showcase-phone">
@@ -355,6 +359,20 @@ const footerLinks = [
 	}
 	.hero .store-badge {
 		margin-block-start: 2.25rem;
+	}
+	.hero .beta-option {
+		margin: 0.75rem 0 0;
+		font-size: 0.875rem;
+		line-height: 1.5;
+	}
+	.hero .beta-option a {
+		color: var(--text);
+		text-decoration-color: rgb(255 255 255 / 0.4);
+		text-underline-offset: 0.2em;
+	}
+	.hero .beta-option a:hover {
+		color: #fff;
+		text-decoration-color: currentColor;
 	}
 
 	/* Screens are shown whole: the approval prompt near the bottom of the chat is
