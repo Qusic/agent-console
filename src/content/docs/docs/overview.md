@@ -15,24 +15,11 @@ process that runs there and communicates with clients such as Agent Console.
 ## How it fits together
 
 1. An agent host runs coding agents and project tools on the remote machine.
-2. Agent Console reaches that host [directly or through a supported cloud tunnel](../connections/).
-3. The app and host communicate over the [Agent Host Protocol](../agent-host-protocol/).
-4. Session state stays synchronized across connected clients.
+2. Agent Console connects to the host over the [Agent Host Protocol](../agent-host-protocol/),
+   [directly or through a supported cloud tunnel](../connections/).
+3. Session state stays synchronized across connected clients.
 
 Your project does not need to be copied to your iPhone or iPad.
-
-## What you can do
-
-From Agent Console, you can:
-
-- send tasks and follow tool activity;
-- answer questions and approve actions;
-- review diffs, browse files, and make edits;
-- open terminals exposed by the host;
-- move between hosts and synchronized sessions;
-- receive [notifications](../webhooks-and-notifications/) from supported hosts, if you opt in.
-
-The exact agents, models, and tools available depend on the host implementation.
 
 ## Setup guides
 
@@ -43,3 +30,17 @@ The following setups are tested with Agent Console:
   supporting multiple agent harnesses, including GitHub Copilot and Claude
 
 Other compatible AHP hosts may also work.
+
+## What you can do
+
+From Agent Console, you can:
+
+- send tasks and follow tool activity;
+- answer questions and approve actions;
+- review diffs, browse files, and make edits;
+- open terminals exposed by the host;
+- move between hosts and synchronized sessions;
+- receive [notifications](../webhooks-and-notifications/) from supported hosts, if you opt in;
+- open hosts, sessions, and folders with [deep links](../deep-links/).
+
+The exact agents, models, and tools available depend on the host implementation.
